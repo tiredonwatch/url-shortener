@@ -1,0 +1,12 @@
+# binay files
+server
+
+# test files
+*.out
+*.prof
+
+# project data
+data.json
+
+# IDE specific, since I'm using vscode server on WSL.
+.vscode/
