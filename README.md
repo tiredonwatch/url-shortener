@@ -28,3 +28,16 @@ Here's the project Structure as of now:
 > Note: Here's the tool I used for tree structure generation, this website has some useful tools!
 [Devtool Tree Structure](https://devtool.tech/en/tree)
 
+### Resources
+I've been surfing the internet to find standard programming practices for Go and for general learning as well. Here are some links that I found to be useful and worth a read!
+
+- [Go By Example](https://gobyexample.com/)
+- [Go Docs - Effective Go](https://go.dev/doc/effective_go)
+- [Learn Go with Tests](https://github.com/quii/learn-go-with-tests)
+- [Alex Edwards Blog](https://www.alexedwards.net/blog)
+> Alex's blogs are really really insightful. I recommend you to go through his blog posts.
+- [Go Docs - CodeReviewComments](https://go.dev/wiki/CodeReviewComments)
+- [Uber Go Guide](https://github.com/uber-go/guide)
+
+I'll be updating the README whenever its required as I continue with the project.
+**Good Luck!**
