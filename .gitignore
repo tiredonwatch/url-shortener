@@ -10,6 +10,3 @@ data.json
 
 # IDE specific, since I'm using vscode server on WSL.
 .vscode/
-
-# temp
-internal

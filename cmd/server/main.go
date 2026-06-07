@@ -5,13 +5,15 @@ import (
 	"net/http"
 	"os"
 	"time"
+
+	"github.com/tiredonwatch/url-shortener/internal/handler"
 )
 
 func main() {
 	// Set up a JSON logger to print to the terminal for logs
 	opts := &slog.HandlerOptions{Level: slog.LevelInfo}
-	handler := slog.NewJSONHandler(os.Stdout, opts)
-	slog.SetDefault(slog.New(handler))
+	handlerJSON := slog.NewJSONHandler(os.Stdout, opts)
+	slog.SetDefault(slog.New(handlerJSON))
 
 	mux := http.NewServeMux()
 
@@ -19,6 +21,9 @@ func main() {
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("OK"))
 	})
+
+	// URL Shortening endpoint under api group
+	mux.HandleFunc("/api/shorten", handler.Shorten)
 
 	// Middleware intercepts incoming requests to log their duration
 	interceptingMux := loggingMiddleware(mux)
